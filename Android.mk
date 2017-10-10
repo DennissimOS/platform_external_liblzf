@@ -12,6 +12,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := liblzf
 LOCAL_SRC_FILES := $(libLZF_SRC_FILES)
+LOCAL_CFLAGS := -Wall -Werror
 
 include $(BUILD_HOST_STATIC_LIBRARY)
 
@@ -22,6 +23,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := liblzf
 LOCAL_SRC_FILES := $(libLZF_SRC_FILES)
+LOCAL_CFLAGS := -Wall -Werror
 
 include $(BUILD_STATIC_LIBRARY)
 
@@ -32,5 +34,6 @@ include $(CLEAR_VARS)
 LOCAL_SRC_FILES := $(call all-java-files-under, src)
 LOCAL_MODULE := liblzf
 LOCAL_MODULE_TAGS := optional
+LOCAL_CFLAGS := -Wall -Werror
 
 include $(BUILD_HOST_JAVA_LIBRARY)
